@@ -1,0 +1,145 @@
+/* --------------------- */
+/* Base styles */
+/* --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  height: 100%;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border: none;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  border: none;
+}
+
+/* for react root element */
+#root {
+  height: 100%;
+}
+
+p,
+ol,
+ul,
+dl,
+table {
+  margin: 0;
+}
+
+/* Remove extra margin for nested lists */
+ul li ul {
+  margin-bottom: 0;
+}
+ol li ol {
+  margin-bottom: 0;
+}
+
+/* --------------------- */
+/* Line break */
+/* --------------------- */
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--fg);
+}
+
+/* Fix issues with select */
+select {
+  color: var(--fg);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06jlmvcnwmaov2w/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==)
+    right center no-repeat;
+  line-height: 1;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+[type="range"] {
+  width: 100%;
+}
+
+input::placeholder {
+  color: rgb(201, 201, 201);
+}
+
+/* This is here so we have any easy place to get all the reset attributes
+   it doesn't really get used
+    */
+.button-reset {
+  text-transform: none;
+  text-shadow: none;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+/* For icons that do not have labels.
+   This can be used to provide a hidden label that a screen reader can see
+   */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/ .loading:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin: -13px 0 0 -13px;
+  width: 22px;
+  height: 22px;
+
+  background-image: url("./loader.svg");
+
+  animation: spin 700ms linear;
+  animation-iteration-count: infinite;
+}
+
+.loadingInverted:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin: -13px 0 0 -13px;
+  width: 22px;
+  height: 22px;
+
+  background-image: url("./loader-inverted.svg");
+
+  animation: spin 700ms linear;
+  animation-iteration-count: infinite;
+
+  z-index: 1;
+}
