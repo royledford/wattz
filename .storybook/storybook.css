@@ -1,0 +1,4 @@
+/* This is just to override any styles for the storybook display */
+body {
+  background-color: white;
+}
