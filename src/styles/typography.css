@@ -40,6 +40,11 @@ h5 {
   --font-letter-spacing: 0;
   --font-weight-medium: var(--weight-regular);
 
+  --font-size-tablet: 1rem;
+  --font-line-height-tablet: 1.25rem;
+  --font-letter-spacing-tablet: 0;
+  --font-weight-medium-tablet: var(--weight-regular);
+
   /* ------------------------------------------ */
   /* - TITLE */
   /* ------------------------------------------ */
