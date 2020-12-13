@@ -20,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 --ci",
-    "build-storybook": "build-storybook -s public --no-dll"
+    "build-storybook": "build-storybook -s public --no-dll",
+    "clean-node": "rm -rf node_modules",
+    "renode": "yarn run clean-node && yarn"
   },
   "eslintConfig": {
     "extends": [
