@@ -6,7 +6,7 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 
 import Button from "./Button";
 
-const stories = storiesOf("VC/Atoms", module);
+const stories = storiesOf("Atoms", module);
 
 stories
   .addDecorator(withKnobs)

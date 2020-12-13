@@ -1,0 +1,44 @@
+.base {
+  margin: 0;
+  padding: 0;
+}
+
+.small {
+  font-size: var(--font-size);
+  letter-spacing: var(--font-letter-spacing);
+  line-height: var(--font-line-height);
+  font-weight: var(--font-weight);
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+span.weight_regular,
+p.weight_regular {
+  font-weight: var(--weight-regular);
+}
+
+span.weight_medium,
+p.weight_medium {
+  font-weight: var(--weight-medium);
+}
+
+span.weight_bold,
+p.weight_bold {
+  font-weight: var(--weight-bold);
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  .small {
+    font-size: var(--font-size-tablet);
+    letter-spacing: var(--font-letter-spacing-tablet);
+    line-height: var(--font-line-height-tablet);
+    font-weight: var(--font-weight-tablet);
+  }
+}
