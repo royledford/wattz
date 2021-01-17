@@ -1,9 +1,9 @@
-import Text from "./Text";
+import Text from './Text'
 
-describe("Text", () => {
-  it("matches the snapshot", () => {
+describe('Text', () => {
+  it('matches the snapshot', () => {
     // NOTE: I'm just testing that it renders and not doing all the permutations, there are too many
-    const wrapper = window.shallow(<Text>Sample text</Text>);
-    expect(wrapper).toMatchSnapshot();
-  });
-});
+    const wrapper = window.shallow(<Text>Sample text</Text>)
+    expect(wrapper).toMatchSnapshot()
+  })
+})
